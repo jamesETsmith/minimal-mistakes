@@ -2,5 +2,5 @@
 layout: home
 author_profile: true
 header:
-overlay_image: ../images/southport.jpg
+    overlay_image: /assets/images/southport.jpg
 ---
