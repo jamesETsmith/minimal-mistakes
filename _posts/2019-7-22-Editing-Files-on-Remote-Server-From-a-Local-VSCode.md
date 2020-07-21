@@ -62,11 +62,14 @@ With the key in place, we can add some shortcuts to our `~/.ssh/config` file to 
    Port XXXX                # change this as instructed by Flatiron or the administrators of your server
    User jsmith              # change this to your cluster username
    ForwardX11 yes
-   ForwardX11Trusted yes          # if you trust us (like -Y)
-   DynamicForward 127.0.0.1:61080 # if you want to use Public:Playbooks/ssh_as_a_socks_proxy
-   ControlPath ~/.ssh/.%r@%h:%p
-   ControlMaster auto             # allows you to connect from other windows without re-authenticating
+   ForwardX11Trusted yes                      # if you trust us (like -Y)
+   DynamicForward 127.0.0.1:61080             # if you want to use Public:Playbooks/ssh_as_a_socks_proxy
+   ControlPersist 4800
+   ControlPath ~/.ssh/sockets/.%r@%h:%p
+   ControlMaster auto                         # allows you to connect from other windows without re-authenticating
 ```
+If the directory `~/.ssh/sockets` doesn't exist already, create it now.
+
 **Note**
 >If you aren't logged on to the remote server you want to connect to, do so now in a terminal window.
 
