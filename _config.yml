@@ -108,8 +108,8 @@ analytics:
 author:
   name: "James E. T. Smith"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "Theoretical Chemical Physics PhD candidate at CU Boulder"
-  location: "Boulder, CO"
+  bio: "Postdoctoral Scholar"
+  location: "Denver, CO"
   email:
   links:
     - label: "Email"
