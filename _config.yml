@@ -108,8 +108,8 @@ analytics:
 author:
   name: "James E. T. Smith"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "Postdoctoral Scholar"
-  location: "Denver, CO"
+  bio: "Flatiron Research Fellow"
+  location: "New York, NY"
   email:
   links:
     - label: "Email"
